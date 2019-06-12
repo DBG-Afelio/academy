@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="utf8"/>
+        <style type="text/css">
+            
+            .error{
+                border:1px solid #F00;
+            }
+            .err_msg{
+                color:#f00;
+            }
+            .good_msg{
+                color:#0f0;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <form action="javascript:alert('valide')">
+                <div>
+                    <label for="nom">Nom* : </label>
+                    <input type="text" name="nom" id="nom" />
+                    <span class="message err_msg" id="nom_message"></span>
+                    <div class="consigne" id="consigne_nom">
+                        <ul>
+                            <li> Requis </li>
+                            <li> Ne peut contenir que des caractères admis </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" id="prenom" />
+                    <span class="message err_msg" id="prenom_message"></span>
+                    <div class="consigne" id="consigne_prenom">
+                        <ul>
+                            <li> Facultatif </li>
+                            <li> Ne peut contenir que des caractères admis</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <label for="login">Login* : </label>
+                    <input type="text" name="login" id="login" />
+                    <span class="message err_msg" id="login_message"></span>
+                    <div class="consigne" id="consigne_login">
+                        <ul>
+                            <li>Requis</li>
+                            <li>Ne peut contenir que des caractères admis, des chiffres et - </li>
+                            <li>Peut contenir un et un seul tiret s'il est suivi d'au moins un caractère</li>
+                            <li>Doit être unique par rapport à un tableau de login interne</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="pwd">Password* : </label>
+                    <input type="text" name="pwd" id="pwd" />
+                    <span class="message err_msg" id="pwd_message"></span>
+                    <div class="consigne" id="consigne_pwd">
+                        <ul>
+                            <li>Requis</li>
+                            <li>Doit contenir des caractères alpha, des chiffres et des caractères spéciaux(+-$/%-_!?)</li>
+                            <li>Entre 6 et 12 caractères</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="repwd">Retype : </label>
+                    <input type="text" name="repwd" id="repwd" />
+                    <span class="message err_msg" id="repwd_message"></span>
+                    <div class="consigne" id="consigne_repwd">
+                        <ul>
+                            <li>Doit être identique au mot de passe</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email">Email* : </label>
+                    <input type="text" name="email" id="email" />
+                    <span class="message err_msg" id="email_message"></span>
+                    <div class="consigne" id="consigne_email">
+                        <ul>
+                            <li>Requis</li>
+                            <li>Ne peut contenir que des caractères, des chiffres et _</li>
+                            <li>Doit posséder un et un seul @</li>
+                            <li>Doit se terminer par un . suivi de 2 à 4 caractères</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="ddn">Date de naissance* : </label>
+                    <input type="text" name="ddn" id="ddn" />
+                    <span class="message err_msg" id="ddn_message"></span>
+                    <div class="consigne" id="consigne_ddn">
+                        <ul>
+                            <li>jj/mm/aaaa</li>
+                            <li>date valide et &lt; now()</li>
+                            <li>Requis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="entierpos">Entier positif* : </label>
+                    <input type="text" name="entierpos" id="entierpos" />
+                    <span class="message err_msg" id="entierpos_message"></span>
+                    <div class="consigne" id="consigne_entierpos">
+                        <ul>
+                            <li>Nombre entier >=0</li>
+                            <li>Requis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="minmax">Entier entre 1 et 100</label>
+                    <input type="text" name="minmax" id="minmax" />
+                    <span class="message err_msg" id="minmax_message"></span>
+                    <div class="consigne" id="consigne_minmax">
+                        <ul>
+                            <li>Les règles sont claires non?</li>
+                            <li>Facultatif</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="nombre">Nombre :</label>
+                    <input type="text" name="nombre" id="nombre" />
+                    <span class="message err_msg" id="nombre_message"></span>
+                    <div class="consigne" id="consigne_nombre">
+                        <ul>
+                            <li>Requis</li>
+                            <li>Nombre au format valide</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <input type="submit" value="Valider"/>
+            </form>
+        </div>
+        <script type="text/javascript" src="validation.js"></script>
+    </body>
+</html>
