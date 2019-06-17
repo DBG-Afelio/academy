@@ -1,5 +1,5 @@
-export const tab_img =
-  [{
+export const tab_img: any[] = [
+  {
       titre         : 'Bulles',
       auteur        : 'E. Lassaux',
       commentaire   : 'Spécialisé dans les photos d\'objet, \'Neness\' aime aussi photographier les animaux',
