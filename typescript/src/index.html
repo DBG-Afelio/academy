@@ -4,60 +4,52 @@
 </head>
 <body>
     <h1>My first TypeScript App</h1>
-    <app>
-        <template id="slide">
-            <template id="bandeau">
-                <div id="vignettes">
-                    <img src="" alt="aperçu" class="thumb"  />
+        <div id="app">
+            <div id="thumbnails">
+                <img src="" alt="aperçu" class="thumb"/>
+            </div>
+            <div class="detail">
+                <div class="details_picture">
+                    <img src="" alt="normal" class="moyenne" />
                 </div>
-            </template>
-            <template id="details">
-                <div class="detail">
-                    <div class="details_picture">
-                        <img src="" alt="normal" class="moyenne" />
+                <div id="details_txt">
+                    <div class="details" >
+                        <span class="intitule">Titre : </span>
+                        <span class="valeur" id="titre"></span>
                     </div>
-                    <div id="details_txt">
-                        <div class="details" >
-                            <span class="intitule">Titre : </span>
-                            <span class="valeur" id="titre"></span>
-                        </div>
-                        <div class="details" >
-                            <span class="intitule">Auteur : </span>
-                            <span class="valeur" id="auteur"></span>
-                        </div>
-                        <div class="details" >
-                            <span class="intitule">Commentaire : </span>
-                            <span class="valeur" id="commentaire"></span>
-                        </div>
-                        <div class="details" >
-                            <span class="intitule" >Pays : </span>
-                            <span class="valeur" id="pays"></span>
-                        </div>
-                        <div class="details" >
-                            <span class="intitule">Prix : </span>
-                            <span class="valeur" id="prix"></span>
-                        </div>
-                        <div class="details input">
-                            Combien : <input type="text" name="nb" id="nb" />
-                        </div>
+                    <div class="details" >
+                        <span class="intitule">Auteur : </span>
+                        <span class="valeur" id="auteur"></span>
+                    </div>
+                    <div class="details" >
+                        <span class="intitule">Commentaire : </span>
+                        <span class="valeur" id="commentaire"></span>
+                    </div>
+                    <div class="details" >
+                        <span class="intitule" >Pays : </span>
+                        <span class="valeur" id="pays"></span>
+                    </div>
+                    <div class="details" >
+                        <span class="intitule">Prix : </span>
+                        <span class="valeur" id="prix"></span>
+                    </div>
+                    <div class="details input">
+                        Combien : <input type="text" name="nb" id="nb" />
                     </div>
                 </div>
-            </template>
-            <template id="panier">
-                <div class="panier">
-                    <header class="entete">
-                        <h3>Panier</h3>
-                    </header>
-                    <section class="commande"></section>
-                    <footer class="pied">
-                        <span class="intitule">Total : </span>
-                        <span class="valeur" class="total"></span>
-                    </footer>
-                </div>
-            </template>
-        </template>
+            </div>
+            <div class="panier">
+                <header class="entete">
+                    <h3>Panier</h3>
+                </header>
+                <section class="commande"></section>
+                <footer class="pied">
+                    <span class="intitule">Total : </span>
+                    <span class="valeur" class="total"></span>
+                </footer>
+            </div>
     </div>
-    </app>
+    
     <script src="/main.bundle.js"></script>
 </body>
 </html>
