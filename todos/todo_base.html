@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="todo.css" media="all" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <div id="app-todo">
+            <h1>Todo List</h1>
+            <ul class="summary">
+                <li>Total : <span class="total"></span></li>
+                <li>Done : <span class="done"></span></li>
+                <li>Todo : <span class="todo"></span></li>
+            </ul>
+            <ul id="todo-list" >
+                <li class="add" id="li_ajout">
+                    <input type="checkbox" class="cb"/>
+                    <span class="intitule texte">Aucun item</span>
+                    <input type="text" class="intitule champ"/>
+                    <span class="icone supprime-icone">X</span>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript" src="todo.js"></script>
+    </body>
+</html>

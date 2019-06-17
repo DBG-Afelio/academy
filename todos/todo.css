@@ -1,0 +1,81 @@
+/* 
+    Document   : todo
+    Created on : 27 juin 2013, 15:23:18
+    Author     : denis
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#app-todo{
+    position: relative;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+ul.summary {
+    display: flex;
+}
+
+ul.summary li{
+    flex: 01 auto;
+    border-right: 1px solid #666;
+    text-align: left;
+    padding: 1px 5px;
+}
+
+
+ul#todo-list, ul.summary {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+ul#todo-list input[type=text] {
+    width: 100%;
+}
+
+#todo-list li.add .cb,
+#todo-list li.add .texte,
+#todo-list li.add .supprime-icone{
+    display:none;
+}
+
+
+#todo-list li.edit .cb{
+    display: none;
+}
+#todo-list li.edit .texte{
+    display: none;
+}
+
+#todo-list li.view .texte{
+    display:inline;
+}
+#todo-list li.view{
+    background-color: #abc;
+}
+#todo-list li.view .champ{
+    display:none;
+}
+#todo-list li.view:hover .supprime-icone{
+    display: inline;
+    cursor: pointer;
+}
+#todo-list li.view .supprime-icone{
+    display: none;
+}
+
+#todo-list li.done .texte{
+    text-decoration: line-through;
+}
+
