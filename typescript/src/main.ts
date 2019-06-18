@@ -1,8 +1,5 @@
-import { ImageListModel } from './app/model/image-list.model';
-import { ImageInfosModel } from './app/model/image-infos.model';
-import {tab_img} from './app/data/sourceJSON';
+import { AppViewModel } from './app/viewmodel/app.view-model';
 
-const list: ImageListModel = new ImageListModel(tab_img);
-const elm: ImageInfosModel = list.getImageInfoById(4);
 
-(<HTMLImageElement>document.querySelector('#thumbnails img')).src = `assets/img/${ elm.image.petite }`;
+const app = new AppViewModel();
+app.run();
