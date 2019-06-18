@@ -1,5 +1,3 @@
-import { AppViewModel } from './app/viewmodel/app.view-model';
+import { tab_img } from './app/data/sourceJSON';
 
-
-const app = new AppViewModel();
-app.run();
+document.querySelector('.thumb').setAttribute('src', `./assets/img/${tab_img[0].image.petite}`);

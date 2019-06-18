@@ -1,4 +1,4 @@
-export const tab_img: ImageInfosDTO[] = [
+export const tab_img: ImageInfosInterface[] = [
   {
       titre         : 'Bulles',
       auteur        : 'E. Lassaux',

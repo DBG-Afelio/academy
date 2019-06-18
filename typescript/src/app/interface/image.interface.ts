@@ -1,4 +1,4 @@
-interface ImageDTO {
+interface ImageInterface {
     grande: string;
     moyenne: string;
     petite: string;
